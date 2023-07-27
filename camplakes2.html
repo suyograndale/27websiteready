@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>  * {
+        box-sizing: border-box
+      }
+      body {
+        /* font-family: Verdana, sans-serif; */
+        margin: 0
+      }
+      .mySlides {
+        display: none;
+      }
+      img {
+        vertical-align:middle;
+      }
+      .slideshow-container {
+        max-width: 400px;
+        position: relative;
+        margin-left:1000px;
+        
+      }
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* Caption text */
+      .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #111111;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px
+        }
+      }
+  
+      body{
+  margin:0px;
+  
+  }
+  
+  .navbar {
+  position: scroll;
+  height: 80px;
+   background-color: #1b1b1b; 
+  justify-content: space-evenly;
+  text-align: center;
+  margin:0;
+  
+  
+  }
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align:start;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+  
+  }
+  
+  .dropdown {
+    float: left;
+    position: relative;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+   
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-one {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-two {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  left: 160px;
+  top: 0px;
+  min-width: 160px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown:hover .dropdown-one, #link1:hover > .dropdown-two {
+  display: block;
+  }
+  
+  .dropdown-one .dItem {
+    color: black;
+    padding: 10px 12px;
+    display: block;
+    text-align: right;
+  }
+  
+  .dropdown-one .dItem:hover, .dropdown-two a:hover {
+    background-color: #ddd;
+  }
+  .logo-img{
+  float: left;
+  position: relative;
+  margin: 15px;
+  }
+    </style>
+</head>
+<body>
+   
+  <div>
+    <img class="logo-img" src="20230705_194413.png" width="200px" ALT="align box" ALIGN=CENTER>
+ <div class="navbar">
+   <!--<div><img  src="20230705_194413.png" height="150px" width="200px" style="margin-right: 100px; margin-top: 0px;" >    -->
+ <a href="#home" style="font-size: 25px;">Home</a>
+    
+      <div class="dropdown">
+        <div class="dropbtn" style="font-size:25px ; font-weight:bolder; color: rgb(47, 255, 0); margin-top: 10px;" >C N</div>
+        <!--  Main Dropdown -->
+        <div class="dropdown-one">
+          <div id="link1" class="dItem" ><a href="Ben10all.html" style="color:black">Ben 10</a> 
+            <!--  Inside Dropdown -->
+        </div>
+          <div class="dItem"><a href="oggymain.html" style="color:black">Oggy and the cockroges</a></div>
+            
+          <div class="dItem" ><a href="rollno21main.html" style="color:black">Roll No 21</a></div>
+          <div class="dItem" ><a href="johnnymain.html" style="color:black">Johney Test</a> </div>
+          <div class="dItem" ><a href="advanturetimemain.html" style="color:black">Advanture Time</a> </div> 
+          <div class="dItem" ><a href="tom&jerrymain.html" style="color:black">Tom & Jerry</a></div> 
+          <div class="dItem" ><a href="Henrymain.html" style="color:black">Henry</a></div>
+          <div class="dItem" ><a href="couragemain.html" style="color:black">Courage the cowrdly dog show</a></div>
+          <div class="dItem" ><a href="johneybravomain.html" style="color:black">Johney Bravo</a></div>
+          <div class="dItem" ><a href="samuraimain.html" style="color:black">Samurai jack</a></div>
+          <div class="dItem" ><a href="dextermain.html" style="color:black">Dexter's Laboratory</a></div>
+          <div class="dItem" ><a href="webearmain.html" style="color:black">We Bare Bears</a></div>
+          <div class="dItem" ><a href="teentmain.html" style="color:black">Teen Titans Go!</a></div>
+          
+        </div>
+      </div>
+
+      
+      
+       
+
+
+      <div class="dropdown">
+          <div class="dropbtn" style="font-size:25px ; font-weight:bolder; color: goldenrod; margin-top: 10px;">Nick</div>
+          <!--  Main Dropdown -->
+          <div class="dropdown-one">
+            <div id="link1" class="dItem"><a href="Ninjahmain.html" style="color:black">Ninja Hatori</a>
+              <!--  Inside Dropdown -->
+              <!-- <div class="dropdown-two">
+                <div class="dItem" id="file" href="#">Season1</div>
+                <div class="dItem" id="file" href="#">Season2</div>
+                <div class="dItem" id="file" href="#">Season3</div>
+                <div class="dItem" id="file" href="#">Season4</div>
+              </div> -->
+              
+            </div>
+            <div class="dItem" ><a href="motupatlumain.html" style="color:black; ">Motu patlu</a></div>
+            <div class="dItem" ><a href="powermain.html" style="color:black;">Power Ranger</a></div>
+            <div class="dItem" ><a href="spongebobmain.html" style="color:black">SpongeBob SquarePants</a></div>
+            <div class="dItem" ><a href="avatarmain.html" style="color:black">Avatar: The Last Airbender</a></div>
+            <div class="dItem" ><a href="idatenjumpmain.html" style="color:black">Idaten Jump</a></div>
+          </div>
+        </div> 
+      
+        <div class="dropdown">
+          <div class="dropbtn" style="font-size:25px ; font-weight:bolder; color: goldenrod; margin-top: 10px;">Sonic Nicklodien</div>
+          <!--  Main Dropdown -->
+          <div class="dropdown-one">
+            <div id="link1" class="dItem" href="#"><a href="zigsharkomain.html" style="color:black">Zig Sharko</a>
+              <!--  Inside Dropdown -->
+              <!-- <div class="dropdown-two">
+                <div class="dItem" id="file" href="#">Season1</div>
+                <div class="dItem" id="file" href="#">Season2</div>
+                <div class="dItem" id="file" href="#">Season3</div>
+                <div class="dItem" id="file" href="#">Season4</div>
+              </div> -->
+              
+            </div>
+            <div class="dItem" ><a href="keymonacheymain.html" style="color:black">Keymon Achey</a></div>
+            <div class="dItem" ><a href="shivamanin.html" style="color:black">Shiva</a></div>
+            <div class="dItem" ><a href="pakdampmain.html" style="color:black">Pakdam Pakadai</a></div>
+            <div class="dItem" ><a href="dianosaurmain.html" style="color:black">Dianosaur King</a></div>
+            <div class="dItem" ><a href="shawnmain.html" style="color:black">Shawn the Sheep</a></div>
+            <div class="dItem" ><a href="supasmain.html" style="color:black">Supa Strikas</a></div>
+            <div class="dItem" ><a href="kungfumain.html" style="color:black">Kung fu Panda</a></div>
+            <div class="dItem" ><a href="smarfmain.html" style="color:black">The Smurf</a></div>
+            <div class="dItem" ><a href="daltonmain.html" style="color:black">Dalton</a></div>
+
+          </div>
+        </div> 
+
+        <div class="dropdown">
+          <div class="dropbtn" style="font-size:25px ; font-weight:bolder; color: goldenrod; margin-top: 10px;">Hungama</div>
+          <!--  Main Dropdown -->
+          <div class="dropdown-one">
+            <div id="link1" class="dItem" ><a href="shinchanmain.html" style="color:black">Shinchan</a>
+              <!--  Inside Dropdown -->
+              <!-- <div class="dropdown-two">
+                <div class="dItem" id="file" href="#">Season1</div>
+                <div class="dItem" id="file" href="#">Season2</div>
+                <div class="dItem" id="file" href="#">Season3</div>
+                <div class="dItem" id="file" href="#">Season4</div>
+              </div> -->
+              
+            </div>
+            <div class="dItem" ><a href="virrobotmain.html" style="color:black">Vir The Robot Boy</a></div> 
+            <div class="dItem" ><a href="monsterkidmain.html" style="color:black">The Monster Kid</a></div>
+            <div class="dItem" ><a href="ultrabmain.html" style="color:black">Ultra b</a></div>
+            <div class="dItem" ><a href="permanmain.html" style="color:black">Perman</a></div>
+            <div class="dItem" ><a href="slugteramain.html" style="color:black">Slugtera</a></div>
+            <div class="dItem" ><a href="kiteretstumain.html" style="color:black">Kiteretstu</a></div>
+            <div class="dItem" ><a href="luckmanmain.html" style="color:black">Luckyman</a></div>
+            <div class="dItem" ><a href="pokemonmain.html" style="color:black">Pokemon</a></div>
+            <div class="dItem" ><a href="Beyblademain.html" style="color:black">Beyblade</a></div>
+            <div class="dItem" ><a href="chimpoimain.html" style="color:black">Chimpui</a></div>
+            <div class="dItem" ><a href="kochikamemain.html" style="color:black">Kochikame</a></div>
+            <div class="dItem" ><a href="robotanmain.html" style="color:black">Robotan</a></div>
+            <div class="dItem" ><a href="yu-gimain.html"style="color:black">yu-gi-oh!</a></div>
+          </div>
+        </div> 
+
+        <div class="dropdown">
+          <div class="dropbtn" style="font-size:25px ; font-weight:bolder; color: goldenrod; margin-top: 10px;">Discovery Kids</div>
+          <!--  Main Dropdown -->
+          <div class="dropdown-one">
+            <div id="link1" class="dItem" ><a href="littlekrishnamain.html" style="color:black">Little Krishna Medleys</a>
+              <!--  Inside Dropdown -->
+              <!-- <div class="dropdown-two">
+                <div class="dItem" id="file" href="#">Season1</div>
+                <div class="dItem" id="file" href="#">Season2</div>
+                <div class="dItem" id="file" href="#">Season3</div>
+                <div class="dItem" id="file" href="#">Season4</div>
+              </div>-->
+            </div>
+            <div class="dItem" ><a href="bandbudhaurbudbakmain.html" style="color:black">Bandbudh Aur Budbak</a></div>
+            <div class="dItem" ><a href="luvkushmain.html" style="color:black">Luv Kush</a></div>
+            <div class="dItem" ><a href="mayathebeemain.html" style="color:black">Maya The Bee</a></div>
+            <div class="dItem" ><a href="naturecatmain.html" style="color:black">Nature Cat</a></div>
+            <div class="dItem" ><a href="wildkrattsmain.html" style="color:black">Wild Kratts</a></div>
+          </div>
+        </div> 
+
+        <div class="dropdown">
+          <div class="dropbtn" style="font-size:25px ; font-weight:bolder; color: goldenrod; margin-top: 10px;">Pogo</div>
+          <!--  Main Dropdown -->
+          <div class="dropdown-one">
+            <div id="link1" class="dItem" ><a href="chhottamain.html" style="color:black">Chhotta Bheem</a>
+              <!--  Inside Dropdown -->
+              <!-- <div class="dropdown-two">
+                <div class="dItem" id="file" href="#">Season1</div>
+                <div class="dItem" id="file" href="#">Season2</div>
+                <div class="dItem" id="file" href="#">Season3</div>
+                <div class="dItem" id="file" href="#">Season4</div>
+              </div> -->
+              
+            </div>
+            <div class="dItem" ><a href="mrbeanmain.html" style="color:black">Mr Bean</a></div>
+            <div class="dItem" ><a href="mightymain.html" style="color:black">Mighty Raju</a></div>
+            <div class="dItem" ><a href="littlesinghammain.html" style="color:black">Little Singham</a></div>
+            <div class="dItem" ><a href="scoobydoomain.html" style="color:black">The Scooby Doo</a></div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="dropbtn" style="font-size:25px ; font-weight:bolder; color: goldenrod; margin-top: 10px;">Disney</div>
+          <!--  Main Dropdown -->
+          <div class="dropdown-one">
+            <div id="link1" class="dItem" ><a href="doremonmain.html"style="color:black">Doremon</a>
+              <!--  Inside Dropdown -->
+              <!-- <div class="dropdown-two">-->
+              
+            </div>
+            <div class="dItem" ><a href="gravityfallsmain.html" style="color:black;">Gravity Falls</div>
+            <div class="dItem" ><a href="phineasferbmain.html" style="color:black">Phineas & Ferb</div>
+            <div class="dItem" ><a href="americandragmain.html" style="color:black">American Dragon Jake Dong</div>
+            <div class="dItem" ><a href="kimmain.html" style="color:black">Kim Possible</div>
+            <div class="dItem" ><a href="allamain.html" style="color:black">Allahdin</div>
+            <div class="dItem" ><a href="milomurphymain.html"style="color:black">Milo Murphy's Law</div>
+            <div class="dItem" ><a href="thelionmain.html" style="color:black">The Lion Guard</a></div>
+            <div class="dItem" ><a href="mermaidmain.html" style="color:black">The Little Mermaid</a></div>
+            <div class="dItem" ><a href="wandermain.html" style="color:black">Wander Over Yonder</a></div>
+            <div class="dItem" ><a href="tarzamain.html" style="color:black">The Legend Of Tarzan</a></div>
+            <div class="dItem" ><a href="ghostfmain.html" style="color:black">Ghost Force</a></div>
+
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <div class="dropbtn" style="font-size:25px ; font-weight:bolder; color: goldenrod; margin-top: 10px;">Disney XD</div>
+          <!--  Main Dropdown -->
+          <div class="dropdown-one">
+            <div id="link1" class="dItem" ><a href="bigheromain.html" style="color:black">Big Hero 6 Series</a></div>
+               <!-- Inside Dropdown
+              <div class="dropdown-two"> -->
+            <div class="dItem" ><a href="kidvscatmain.html" style="color:black">Kid VS Cat</a></div>
+            <div class="dItem" ><a href="owlhusings1.html"style="color:black">Kick Buttowski</a></div>
+            <div class="dItem" ><a href="owlhusings1.html"style="color:black">The Owl House</a></div>
+            <div class="dItem" ><a href="tronuprisingmain.html" style="color:black">Tron Uprising</a></div>
+            <div class="dItem" ><a href="ducktalesmain.html" style="color:black">Duck Tales</a></div>
+            <div class="dItem" ><a href="futurewormmain.html" style="color:black">Future Worm</a></div>
+            <div class="dItem" ><a href="avengerearthmain.html" style="color:black">The Avenger Earth's Mightiest</a></div>
+            <div class="dItem" ><a href="starforcemain.html" style="color:black">Star vs the Forces of Evil</a> </div>
+            <div class="dItem" ><a href="spidermain.html" style="color:black">Spider-man</a></div>
+            <div class="dItem" ><a href="maxsteelmain.html" style="color:black">Max Steel</a></div>
+            <div class="dItem" ><a href="thegutsymain.html" style="color:black">Ultimate Spider-man</a></div>
+            <div class="dItem" ><a href="thegutsymain.html" style="color:black">The Gutsy Frog</a> </div>
+            <div class="dItem" ><a href="superrobotmain.html" style="color:black">Super robot Monkey</a></div>
+            <div class="dItem" ><a href="camplakemain.html" style="color:black"> Camp Lakebottom</a></div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    <br>
+<button  style="background-color: rgb(83, 0, 29); padding: 20px 40px; border-radius: 10px;"><a href="camplakemain2.html" style="text-decoration:none; color:rgb(255, 255, 255)" >Back</a></button><br><br>
+
+<img src="benclassics1.PNG" height="600px" width="1000px" style="margin-left: 270px; border-radius: 20px;">
+<h1 style="text-align: center;">Camp Lakebottom Season 2</h1>
+<h4>Camp Lakebottom Season 2 Episodes Hindi Dubbed Download,Camp Lakebottom Season 2 Episodes in Hindi-Tam-Tel-Eng-Mal Multi Audio Download, Camp Lakebottom Season 2  Multi Audio [Hindi-Tamil-Telugu-Eng-Mal] DD2.0 480p, 720p & 1080p HD BluRay | 10bit HEVC ESub (Nick and ETV Dub), Download Camp Lakebottom Season 2 Episodes in Hindi Multi Audio</h4>
+
+<h2>Cartoon Series Info</h2>
+
+<h2>Name: Camp Lakebottom Season 2  </h2>
+
+<h2>Seasons: 2</h2>
+
+<h2>Episodes: 30</h2>
+
+<h2>Release Year: 2005</h2>
+
+<h2>TV Channel (India): Hungama</h2>
+
+<h2>Language: Hindi – Tamil – Telugu – Mal – Hindi </h2>
+
+<h2>Quality: (360p, 480p, 720p HD, 1080p FHD)</h2>
+
+ <div style="text-align: center; ">
+               
+  <a href=""><h2>Episode 1</h2></a>
+  <a href=""><h2>Episode 2</h2></a>
+  <a href=""><h2>Episode 3</h2></a>
+  <a href=""><h2>Episode 4</h2></a>
+  <a href=""><h2>Episode 5</h2></a>
+  <a href=""><h2>Episode 6</h2></a>
+  <a href=""><h2>Episode 7</h2></a>
+  <a href=""><h2>Episode 8</h2></a>
+  <a href=""><h2>Episode 9</h2></a>
+  <a href=""><h2>Episode 10</h2></a>
+  <a href=""><h2>Episode 11</h2></a>
+  <a href=""><h2>Episode 12</h2></a>
+  <a href=""><h2>Episode 13</h2></a>
+  <a href=""><h2>Episode 14</h2></a>
+  <a href=""><h2>Episode 15</h2></a>
+  
+ 
+ </div>
+
+ <div class="slideshow-container">
+ <div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="pokemon2.PNG" style="width:100%">
+  <div class="text"><h1>Pokemon</h1></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="gravityfallss1.PNG" style="width:100%">
+  <div class="text">Sunset in Romania</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="benclassics1.PNG" style="width:100%">
+  <div class="text">New York, USA</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="" style="width:100%">
+  <div class="text">New York, USA</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="" style="width:100%">
+  <div class="text">New York, USA</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="benclassics1.PNG" style="width:100%">
+  <div class="text">New York, USA</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="margin-left:1125px; margin-top:10px;">
+<span class="dot" onclick="currentSlide(0)"></span>
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+let timeoutId = null;
+const slides = document.getElementsByClassName("mySlides");
+const dots = document.getElementsByClassName("dot");
+
+showSlides();
+function currentSlide(index) {
+     slideIndex = index;
+     showSlides();
+}
+function plusSlides(step) {
+  
+  if(step < 0) {
+      slideIndex -= 2;
+      
+      if(slideIndex < 0) {
+        slideIndex = slides.length - 1;
+      }
+  }
+  
+  showSlides();
+}
+function showSlides() {
+  for(let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    dots[i].classList.remove('active');
+  }
+  slideIndex++;
+  if(slideIndex > slides.length) {
+    slideIndex = 1
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add('active');
+   if(timeoutId) {
+      clearTimeout(timeoutId);
+   }
+  timeoutId = setTimeout(showSlides, 5000); // Change 5 seconds
+}
+</script>
+
+    
+        
+</body>
+</html>
